@@ -19,4 +19,8 @@
     NSString *title = [sender titleForState:UIControlStateNormal];
     statusText.text = [NSString stringWithFormat: @"%@ button pressed.", title];
 }
+
+- (IBAction)clearButtonPressed:(id)sender {
+    statusText.text = [NSString stringWithFormat:@""];
+}
 @end
